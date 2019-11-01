@@ -3,7 +3,7 @@ import unittest
 import time
 from common.HTMLTestRunner import HTMLTestRunner
 from config.config_path import report_path
-from common.sendmail import SendMail
+# from common.sendmail import SendMail
 
 
 def run():
