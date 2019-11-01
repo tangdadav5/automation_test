@@ -29,7 +29,8 @@ class ApiTestCase(unittest.TestCase, HttpClientTest, Common):
         url = self.change_url(caseinfo['url'])
         name = caseinfo["接口名"]
         methond = caseinfo['请求方法']
-        header = eval(caseinfo['头信息'])
+        # header = eval(caseinfo['头信息'])
+        header = self.changge_header(caseinfo['头信息'])
         data = self.change_data(caseinfo['入参'])
         result = caseinfo['断言']
         extract = caseinfo['提取变量']

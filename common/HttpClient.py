@@ -11,22 +11,23 @@ default_headers = {
 class HttpClientTest():
     """备份HttpClient类"""
     def __init__(self, methond, url, data=None, headers=None, files=None):
-        if headers:
-            for key, value in headers.items():
-                default_headers[key] = value
+        # if headers:
+        #     for key, value in headers.items():
+        #         default_headers[key] = value
         self.methond = methond
         self.url = url
         self.data = data
         self.files = files
+        self.headers = headers
 
     def send_get(self):
         """GET请求"""
-        res = requests.get(url=self.url, params=self.data, headers=default_headers)
+        res = requests.get(url=self.url, params=self.data, headers=self.headers)
         return res.json()
 
     def send_post(self):
         """POST请求"""
-        res = requests.post(url=self.url, data=self.data, headers=default_headers)
+        res = requests.post(url=self.url, data=self.data, headers=self.headers)
         return res.json()
 
     def run(self):

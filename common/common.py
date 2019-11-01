@@ -68,6 +68,15 @@ class Common():
                 data[e] = cfg  # 将${topic_id}替换为topic_id
         return data
 
+    def changge_header(self, header):
+        if header:
+            if not isinstance(header, dict):
+                header = eval(header)
+                return header
+        else:
+            header = {"Content-Type": "application/x-www-form-urlencoded"}
+            return header
+
     def md5(self, data):
         """md5加密方法"""
         string = json.dumps(data)

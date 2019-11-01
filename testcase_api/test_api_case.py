@@ -35,12 +35,20 @@ class  ApiTestCase(unittest.TestCase,HttpClientTest):
     #     print("这是读取写入后的topic_id：", cfg)
     #     print(type(response), response)
 
+    # def test_zhjk(self):
+    #     url = "https://user.vskit.tv/vskit/user/email/account/check"
+    #     data = {"email": "369@qq.com"}
+    #     header = {"Content-Type": "application/x-www-form-urlencoded"}
+    #     res = HttpClientTest("POST", url=url, data=data, headers=header).run()
+    #     print(res)
+
     def test_zhjk(self):
-        url = "http://222.212.141.46:8085/user/login"
-        data = {"username": "gz0130", "password": "123"}
+        url = "https://passport.yunexpress.com/"
+        data = {"userName": "625681534","password":"zwp625681534"}
         header = {"Content-Type": "application/x-www-form-urlencoded"}
         res = HttpClientTest("POST", url=url, data=data, headers=header).run()
         print(res)
+
 
 
 if __name__ == "__main__":
