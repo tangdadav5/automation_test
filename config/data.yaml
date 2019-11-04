@@ -2,3 +2,18 @@ ketangurl: https://www.baidu.com/
 apiurl: http://39.107.96.138:3000/api/v1/
 browser:
   type: chrome  # ie firefox
+
+
+
+platformName: Android
+platformVersion: 7.0
+deviceName: 02194106C0800255
+appPackage: com.yomobigroup.chat
+appActivity: .ui.activity.LaunchActivity
+unicodeKeyboard: true
+resetKeyboard: true
+noSign: true
+noReset: true
+device: Appium
+autoGrantPermissions: true
+appremote_url: http://127.0.0.1:4723/wd/hub

@@ -8,7 +8,7 @@ yaml = Yaml()
 logger = Logger(logger='Browser').getlog()
 
 
-class Browser(object):
+class Browser():
 
     def open_browser(self):
         '''

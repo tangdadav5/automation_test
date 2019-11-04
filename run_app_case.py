@@ -20,34 +20,18 @@ def run():
     # testcases.addTests(unittest.TestLoader().loadTestsFromName('class_note.class18_report.TestCase1'))
     # testcases.addTests(unittest.TestLoader().loadTestsFromNames(['testcase.test_case.TestCase1', 'testcase.test_case.TestCase2']))
 
-    testcases.addTests(unittest.TestLoader().loadTestsFromName('testcase.test_ketang.TestCaseKeTang'))
+    testcases.addTests(unittest.TestLoader().loadTestsFromName('testcase_app.test_login.TestCaselogin'))
 
     '''第三步：TestTestRunner类里面的run方法执行'''
     # unittest.TextTestRunner().run(testcases)
     '''集成报告后的第三步'''
-    report_name = "UI自动化测试报告"
+    report_name = "APP自动化测试报告"
     report_time = time.strftime("%Y-%m-%d_%H-%M-%S", time.localtime())
     report_dir = report_path + report_name + report_time + ".html"
     with open(report_dir, 'wb') as file_path:
-        runner = HTMLTestRunner(stream=file_path, title="UI自动化测试报告", description='腾讯课堂登录模块', verbosity=2)
+        runner = HTMLTestRunner(stream=file_path, title="APP自动化测试报告", description='Vskit邮箱登录模块', verbosity=2)
         runner.run(testcases)
     # SendMail().send_email()
-
-# def run():
-#     test_dir = './testcase'
-#     suite = unittest.defaultTestLoader.discover(start_dir=test_dir,pattern='test*.py')
-#
-#     report_time = time.strftime('%Y-%m-%d_%H_%M_%S')
-#     report_name = 'UI自动化测试报告'
-#     report_path = './result/report/'
-#     reportname = report_path + report_name + report_time + '.html'
-#     with open(reportname,'wb') as f:
-#         runner = HTMLTestRunner(
-#             stream=f,
-#             title='测试报告',
-#             description='Test the import testcase'
-#         )
-#         runner.run(suite)
 
 
 if __name__ == '__main__':
