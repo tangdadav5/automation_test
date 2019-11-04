@@ -47,9 +47,12 @@ class Common():
 
         return True, "PASS"
 
-
     def change_url(self, url):
-        """读取excel中URL的参数化"""
+        """
+        读取excel中URL的参数化{url}，如果没有{url}，则执行url
+        :param url: {url}
+        :return: url
+        """
         if '{' in url and url.startswith('{') and url.endswith('}'):  # 判断{ 在url中，并且以{ 开头，} 结束
             cfg = Yaml().read_yaml(read_yaml_path)  # 读取整个yaml文件
             new_name = url.split('{')[1].split('}')[0]  # 分离得到 apiurl 字段
@@ -59,8 +62,13 @@ class Common():
             return url
 
     def change_data(self, data):
-        """处理请求入参，引用提取的变量"""
+        """
+        处理请求入参，引用提取的变量
+        :param data: 请求参数，并转换为dict格式
+        :return: 入参
+        """
         data = eval(data)  # 将str格式转换为python字典格式
+        """如果入参中存在${xxx}，分离该获取xxx,并去yaml文件中找到xxx，并获取xxx的值"""
         for key, value in data.items():
             if value.startswith("$"):
                 e = ((value.split("$")[1]).split("{")[1]).split("}")[0]  # 分离${topic_id}为 topic_id
@@ -69,6 +77,11 @@ class Common():
         return data
 
     def changge_header(self, header):
+        """
+        处理头信息，如果不是字典转换为字典，如果为空添加一个默认请求头
+        :param header: 请求头
+        :return:
+        """
         if header:
             if not isinstance(header, dict):
                 header = eval(header)
@@ -78,14 +91,22 @@ class Common():
             return header
 
     def md5(self, data):
-        """md5加密方法"""
+        """
+        md5加密方法
+        :param data:  传入需要加密的参数
+        :return:  加密后的参数
+        """
         string = json.dumps(data)
         m = hashlib.md5()
         m.update(string.encode(encoding='utf-8'))
         return m.hexdigest()
 
     def generate_phone(self, top=None):
-        """生成随机11位的电话号码"""
+        """
+        生成随机11位的电话号码
+        :param top: 手机号段，可不填（默认随机）
+        :return: 11位手机号码
+        """
         if not top:
             phone_list = ["136","188","134","172","184","187"]    #定义号码段
             phone = random.choice(phone_list)+"".join(random.choice("0123456789") for _ in range(8))
@@ -96,4 +117,4 @@ class Common():
 
 if __name__ == "__main__":
     print(Common().md5('123456'))
-    print(Common().generate_phone())
+    print(Common().generate_phone(135))
