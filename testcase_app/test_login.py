@@ -24,6 +24,5 @@ class TestCaselogin(unittest.TestCase,KeyWord):
         self.dr.clickUiautomatorByName("Next")  # 点击Email方式登陆
         time.sleep(1)
 
-
 if __name__ == "__main__":
     unittest.main()
