@@ -10,7 +10,9 @@ class TestCaseBaidu(unittest.TestCase,KeyWord):
     def setUpClass(self):
         """打开浏览器"""
         self.dr = KeyWord()
+        self.dr.get("https://www.baidu.com/")
         self.dr.wait(10)
+
 
     def test_case1(self):
         """搜索123"""

@@ -32,6 +32,7 @@ class Browser(object):
             browser = webdriver.Firefox(executable_path=firefox_path)
         else:
             raise ('浏览器类型错误，请检查浏览器属性')
+        # browser.get(url)
         # browser.get(cfg['url'])
         # logger.info('打开的URL为:{}'.format(cfg['ketangurl']))
         return browser
