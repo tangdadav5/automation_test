@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 import unittest
 import time
-from common.HTMLTestRunner import HTMLTestRunner
+from common.HTMLTestRunner_zhuxingtu import HTMLTestRunner
 from config.config_path import report_path
 # from common.sendmail import SendMail
 

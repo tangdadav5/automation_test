@@ -1,0 +1,11 @@
+[browser.py] - [2019-11-04 18:20:03,405]  - [INFO] - 启动Chrome浏览器
+[pyselenium.py] - [2019-11-04 18:20:04,576]  - [INFO] - 打开的URL为:https://www.baidu.com/
+[pyselenium.py] - [2019-11-04 18:20:04,577]  - [INFO] - 执行隐式等待，等待时长为10秒
+[pyselenium.py] - [2019-11-04 18:20:04,620]  - [INFO] - 执行鼠标悬停成功，定位方法以及元素为：('xpath', '//*[@id="u1"]/a[9]')
+[pyselenium.py] - [2019-11-04 18:20:04,751]  - [INFO] - 执行元素等待出现并进行输入成功！！！，定位方法以及元素为：('id', 'kw') ，输入的值为：hao123
+[pyselenium.py] - [2019-11-04 18:20:04,827]  - [INFO] - 执行元素等待出现并进行点击操作成功，元素值为：('xpath', '//*[@id="su"]')
+[pyselenium.py] - [2019-11-04 18:20:26,219]  - [INFO] - 错误信息已截图，截图地址为：D:\PythonCode\automation_test\result/SCRshot/2019-11-04_18-20-25.png
+[pyselenium.py] - [2019-11-04 18:20:26,349]  - [INFO] - 执行元素等待出现并进行输入成功！！！，定位方法以及元素为：('id', 'kw') ，输入的值为：hao123
+[pyselenium.py] - [2019-11-04 18:20:26,432]  - [INFO] - 执行元素等待出现并进行点击操作成功，元素值为：
+[pyselenium.py] - [2019-11-04 18:20:47,871]  - [INFO] - 错误信息已截图，截图地址为：D:\PythonCode\automation_test\result/SCRshot/2019-11-04_18-20-47.png
+[pyselenium.py] - [2019-11-04 18:20:49,964]  - [INFO] - 浏览器执行关闭操作成功

@@ -1,0 +1,4 @@
+[browser.py] - [2019-11-05 14:44:49,664]  - [INFO] - 启动Chrome浏览器
+[pyselenium.py] - [2019-11-05 14:44:51,192]  - [INFO] - 打开的URL为:https://www.baidu.com/
+[pyselenium.py] - [2019-11-05 14:44:51,193]  - [INFO] - 执行隐式等待，等待时长为10秒
+[pyselenium.py] - [2019-11-05 14:44:53,404]  - [INFO] - 浏览器执行关闭操作成功

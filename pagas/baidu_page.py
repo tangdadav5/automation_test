@@ -2,6 +2,7 @@
 from selenium.webdriver.common.by import By
 
 
+
 class Baidu_search():
     hover = (By.XPATH, '//*[@id="u1"]/a[9]')     # 更多产品
     hover1 = ('//*[@id="u1"]/a[9]')              # 更多产品

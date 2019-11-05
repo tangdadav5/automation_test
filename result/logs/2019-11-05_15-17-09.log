@@ -1,0 +1,8 @@
+[APP_KeyWord.py] - [2019-11-05 15:17:44,739]  - [INFO] - 执行元素等待出现并进行点击操作成功，元素值为：Me
+[APP_KeyWord.py] - [2019-11-05 15:17:45,766]  - [INFO] - 执行元素等待出现并进行点击操作成功，元素值为：Log in
+[APP_KeyWord.py] - [2019-11-05 15:17:47,020]  - [INFO] - 执行元素等待出现并进行点击操作成功，元素值为：com.yomobigroup.chat:id/email
+[APP_KeyWord.py] - [2019-11-05 15:17:47,020]  - [ERROR] - 执行元素等待失败！！！369@qq.com输入失败，定位方法以及元素为：com.yomobigroup.chat:id/email_et 
+[APP_KeyWord.py] - [2019-11-05 15:17:48,060]  - [INFO] - 错误信息已截图，截图地址为：D:\PythonCode\automation_test\result/SCRshot/2019-11-05_15-17-47.png
+[APP_KeyWord.py] - [2019-11-05 15:17:51,296]  - [INFO] - 执行元素等待出现并进行点击操作成功，元素值为：Next
+[APP_KeyWord.py] - [2019-11-05 15:17:51,297]  - [ERROR] - 执行元素等待失败！！！qwerty输入失败，定位方法以及元素为：com.yomobigroup.chat:id/pwd_et 
+[APP_KeyWord.py] - [2019-11-05 15:17:52,698]  - [INFO] - 错误信息已截图，截图地址为：D:\PythonCode\automation_test\result/SCRshot/2019-11-05_15-17-51.png

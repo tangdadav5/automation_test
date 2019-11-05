@@ -206,6 +206,7 @@ class KeyWord(Browser):
         '''
         try:
             element = WebDriverWait(self.browser, 10).until(EC.presence_of_element_located(locator))
+
             element.click()
             logger.info('执行元素等待出现并进行点击操作成功，元素值为：{}'.format(locator))
         except:

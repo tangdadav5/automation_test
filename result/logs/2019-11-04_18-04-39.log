@@ -1,0 +1,10 @@
+[browser.py] - [2019-11-04 18:04:44,498]  - [INFO] - 启动Chrome浏览器
+[pyselenium.py] - [2019-11-04 18:04:54,632]  - [INFO] - 打开的URL为:http://ke.qq.com
+[pyselenium.py] - [2019-11-04 18:04:54,634]  - [INFO] - 执行隐式等待，等待时长为10秒
+[pyselenium.py] - [2019-11-04 18:04:54,885]  - [INFO] - 执行鼠标悬停成功，定位方法以及元素为：('xpath', '//*[@title="分类"]')
+[pyselenium.py] - [2019-11-04 18:04:54,918]  - [INFO] - 成功获取文本值，定位元素的方法以及值为：('xpath', '//*[@title="分类"]')，获取的文本值为：分类
+[pyselenium.py] - [2019-11-04 18:04:55,000]  - [INFO] - 执行元素等待出现并进行点击操作成功，元素值为：('xpath', '//*[@id="js-mod-entry-index"]/a')
+[pyselenium.py] - [2019-11-04 18:04:57,492]  - [INFO] - 执行元素等待出现并进行点击操作成功，元素值为：('xpath', "//*[@class='icon-font i-qq']")
+[pyselenium.py] - [2019-11-04 18:04:57,525]  - [INFO] - 进入frame框架成功，定位into_frame的元素为：
+[pyselenium.py] - [2019-11-04 18:04:57,625]  - [INFO] - 执行元素等待出现并进行点击操作成功，元素值为：('xpath', '//*[@id="switcher_plogin"]')
+[pyselenium.py] - [2019-11-04 18:05:00,761]  - [INFO] - 浏览器执行关闭操作成功

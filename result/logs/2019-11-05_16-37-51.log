@@ -1,0 +1,6 @@
+[APP_KeyWord.py] - [2019-11-05 16:39:08,094]  - [INFO] - 执行元素等待出现并进行点击操作成功，元素值为：Me
+[APP_KeyWord.py] - [2019-11-05 16:39:10,564]  - [INFO] - 执行元素等待出现并进行点击操作成功，元素值为：Log in
+[APP_KeyWord.py] - [2019-11-05 16:39:10,890]  - [INFO] - 执行元素等待出现并进行点击操作成功，元素值为：com.yomobigroup.chat:id/email
+[APP_KeyWord.py] - [2019-11-05 16:39:17,306]  - [INFO] - 执行元素等待出现并输入文本信息369@qq.com，元素值为：com.yomobigroup.chat:id/email_et
+[APP_KeyWord.py] - [2019-11-05 16:39:18,027]  - [INFO] - 执行元素等待出现并进行点击操作成功，元素值为：Next
+[APP_KeyWord.py] - [2019-11-05 16:39:25,079]  - [INFO] - 执行元素等待出现并输入文本信息qwerty，元素值为：com.yomobigroup.chat:id/pwd_et

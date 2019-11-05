@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 import unittest
 import time
-from common.HTMLTestRunner import HTMLTestRunner
+from common.HTMLTestRunner_zhuxingtu import HTMLTestRunner
 from config.config_path import report_path
 from common.sendmail import SendMail
 
@@ -20,8 +20,8 @@ def run():
     # testcases.addTests(unittest.TestLoader().loadTestsFromName('class_note.class18_report.TestCase1'))
     # testcases.addTests(unittest.TestLoader().loadTestsFromNames(['testcase.test_case.TestCase1', 'testcase.test_case.TestCase2']))
 
-    testcases.addTests(unittest.TestLoader().loadTestsFromName('testcase_webUI.test_ketang.TestCaseKeTang'))
-    # testcases.addTests(unittest.TestLoader().loadTestsFromName('testcase.test_baidu.TestCaseBaidu'))
+    # testcases.addTests(unittest.TestLoader().loadTestsFromName('testcase_webUI.test_ketang.TestCaseKeTang'))
+    testcases.addTests(unittest.TestLoader().loadTestsFromName('testcase_webUI.test_baidu.TestCaseBaidu'))
 
     '''第三步：TestTestRunner类里面的run方法执行'''
     # unittest.TextTestRunner().run(testcases)

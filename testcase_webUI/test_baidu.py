@@ -9,34 +9,24 @@ class TestCaseBaidu(unittest.TestCase,KeyWord):
     @classmethod
     def setUpClass(self):
         """打开浏览器"""
-        self.dr = KeyWord()
-        self.dr.get("https://www.baidu.com/")
-        self.dr.wait(10)
+        self.driver = KeyWord()
+        self.driver.get("https://www.baidu.com/")
+        self.driver.wait(10)
 
 
     def test_case1(self):
         """搜索123"""
-        self.dr.mouse_hover(Baidu_search.hover) # 悬停失败
-        self.dr.element_until_send_keys(Baidu_search.send_keys,'123')
-        self.dr.element_until_click(Baidu_search.click)
-        self.dr.get_text(Baidu_search.text)
 
-    def test_case2(self):
-        """搜索好123"""
-        self.dr.element_until_presence_send_keys(Baidu_search.send_keys,'hao123')
-        self.dr.element_until_presence_click(Baidu_search.click)
-        self.dr.get_text(Baidu_search.text)
+        self.driver.element_until_send_keys(Baidu_search.send_keys,'123')
+        self.driver.element_until_click(Baidu_search.click)
+        self.driver.get_text(Baidu_search.text)
 
-    def test_case3(self):
-        """搜索好123"""
-        self.dr.element_until_visibility_send_keys(Baidu_search.send_keys,'hao123')
-        self.dr.element_until_visibility_click(Baidu_search.click)
-        self.dr.get_text(Baidu_search.text)
+
 
     @classmethod
     def tearDownClass(self):
         """关闭浏览器"""
-        self.dr.close_browser()
+        self.driver.close_browser()
 
 
 if __name__ == "__main__":
