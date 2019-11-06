@@ -13,7 +13,7 @@ class TestCaselogin(unittest.TestCase,KeyWord):
     def test_case(self):
         """启动vskit"""
         self.dr = KeyWord()
-        time.sleep(10)
+        time.sleep(20)
         """点击登录"""
         # self.dr.click_by_name("Me")
         # self.dr.wait_element( "com.xxx.xxx.ceshi:id/main_select_index_rb", "没有发现xxxx...")

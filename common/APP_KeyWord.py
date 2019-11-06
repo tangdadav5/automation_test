@@ -7,6 +7,8 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.by import By
 import time
 import unittest
+import os
+import socket
 from config.config_path import picture_path
 
 logger = Logger(logger='KeyWord').getlog()
@@ -17,6 +19,8 @@ class KeyWord(AppiumDriver):
 
     def __init__(self):
         """初始化appium配置"""
+        self.run_appium_services("appium -a 127.0.0.1 -p 4723 --command-timeout 600")
+        time.sleep(30)
         self.appdriver = self.open_app()
 
 
@@ -25,8 +29,34 @@ class KeyWord(AppiumDriver):
         self.appdriver.quit()
         logger.info('app关闭成功')
 
-    def run_appium_services(self):
-        pass
+    def is_port_used(self,ip, port):
+        """
+        check whether the port is used by other program
+        检测端口是否被占用
+
+        :param ip:
+        :param port:
+        :return:
+        """
+        s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+        try:
+            s.connect((ip, int(port)))
+            s.shutdown(2)
+            return True
+        except:
+            return False
+
+
+
+    def run_appium_services(self,cmd):
+        res=self.is_port_used("127.0.0.1",4723)
+        if(res):
+            logger.info("appium服务4723端口已经启动，无须重复启动")
+        else:
+            os.system(cmd)
+            logger.info("appium服务已启动")
+
+
 
     def clickUiautomatorByName(self,name):
         """
